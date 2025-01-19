@@ -1,5 +1,5 @@
 var n = document.querySelectorAll(".drum").length;
-for(var i = 0; i<n+1;i++){
+for(var i = 0; i<n;i++){
     document.querySelectorAll(".drum")[i].addEventListener("click", function(){
         var x = this.innerHTML;
         switch(x){
@@ -27,7 +27,7 @@ for(var i = 0; i<n+1;i++){
                 var tom1 = new Audio("sounds/tom-4.mp3");
                 tom1.play();
                 break;
-                case "i":
+                case "I":
                     var tom1 = new Audio("sounds/snare.mp3");
                     tom1.play();
                     break;
